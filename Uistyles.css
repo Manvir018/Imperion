@@ -1,0 +1,192 @@
+/* General CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Navbar: Adjust text logo on the left, ul on the right */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.container {
+  display: contents;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  /* Adjusted for font size similar to the image */
+  font-weight: 700;
+  /* Bold font as in the image */
+  color: white;
+  font-family: 'Arial', sans-serif;
+  /* Similar font style as the image */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Arial', sans-serif;
+  /* Same font for the links */
+}
+
+/* Center the content like in the image */
+.slider-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Full screen height */
+  text-align: center;
+  color: white;
+}
+
+.slider-content h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* Fix width and alignment to avoid horizontal shifting */
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add the dark overlay on background image */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://img.freepik.com/free-photo/modern-equipped-computer-lab_23-2149241213.jpg?t=st=1726291842~exp=1726295442~hmac=b224de439c748ab4745ae15dd37ddafaf61ad7cfaf6f1efca1850bdba6135e94&w=1060');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.slider-content {
+  text-align: center;
+  color: white;
+}
+
+.slider-content h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  margin-bottom: 2rem;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+
+.primary-btn {
+  background-color: #0096d1;
+  color: white;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+/* Adjust stats to be three separate boxes, half over the image */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Space between the boxes */
+  position: relative;
+  bottom: -50px; /* Move the stats upward, halfway over the image */
+  z-index: 2;
+}
+
+.stat-box {
+  background-color: red; /* You can change this per box */
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  width: 300px; /* Set width of each box */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+.stat-box:nth-child(2) {
+  background-color: #3cb878; /* Adjust background color for the second box */
+}
+
+.stat-box:nth-child(3) {
+  background-color: #f36f5b; /* Adjust background color for the third box */
+}
+
+.stat-box h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-box p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Ensure proper positioning of stats on all screen sizes */
+.hero {
+  position: relative;
+  z-index: 1;
+}

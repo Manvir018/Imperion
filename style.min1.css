@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-top {
+  margin-top: 0;
+  position: relative;
+  transition: .3s all;
+}
+
+.container{
+  max-width: 1000px;
+  border-bottom: 1px solid #f2f2f2;
+}
